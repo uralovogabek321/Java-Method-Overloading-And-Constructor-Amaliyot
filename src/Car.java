@@ -18,16 +18,32 @@ public class Car {
         return color;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public String getModel() {
         return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public double getPrice() {
         return price;
     }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public String getType() {
         return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public void carInformation() {
@@ -39,6 +55,10 @@ public class Car {
 
     static void main(String[] args) {
         Car bmw = new Car("blue", "bmw m3", 72.00, "automatic");
+        bmw.setColor("red");
+        bmw.setModel("bmw i3");
+        bmw.setPrice(67.00);
+        bmw.setType("mechanic");
         bmw.carInformation();
     }
 }
